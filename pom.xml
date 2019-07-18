@@ -27,6 +27,22 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+           
+   <!--- Nexus Related -->
+           <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://ec2-52-61-240-37.us-gov-west-1.compute.amazonaws.com:8081/repository/MIT-SAMPLE-REL/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://ec2-52-61-240-37.us-gov-west-1.compute.amazonaws.com:8081/repository/MIT-SAMPLE-SNAP/</url>
+        </snapshotRepository>
+           
+ <!-- End of Nexus Related -->          
+           
+                   
   </distributionManagement>
 
   <build>
